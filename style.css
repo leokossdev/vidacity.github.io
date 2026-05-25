@@ -122,9 +122,23 @@ pre code { background: transparent; padding: 0; color: #e6e6ea; }
   }
   .nav-links.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
   .nav-links li { border-bottom: 1px solid var(--border-soft); }
-  .nav-links li:last-child { border-bottom: 0; padding-top: 8px; }
+  /* GitHub CTA: standalone pill, centered, with its own padding instead of the
+     "padding: 14px 0" used by the other plain text links. The flex on the <li>
+     centers the pill horizontally; the !important on padding overrides the
+     plain-link rule on the same selector level. */
+  .nav-links li:last-child {
+    border-bottom: 0;
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+  }
   .nav-links a { display: block; padding: 14px 0; font-size: 1rem; }
-  .nav-cta { display: inline-block; }
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 22px !important;
+    font-size: 0.95rem;
+  }
 }
 
 /* ---- Hero ---- */
@@ -182,6 +196,20 @@ pre code { background: transparent; padding: 0; color: #e6e6ea; }
 }
 .hero-list strong { color: var(--text); }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 36px; }
+
+/* Mobile: hero CTA pair stacks into one column, two rows, centered horizontally.
+   max-width on each button keeps them from going edge-to-edge on slightly wider phones. */
+@media (max-width: 760px) {
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-cta .btn {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+}
 .hero-badges {
   list-style: none; margin: 0; padding: 0;
   display: flex; flex-wrap: wrap; gap: 20px 24px;
@@ -339,29 +367,63 @@ section { padding: 96px 0; }
   display: grid; gap: 20px;
   grid-template-columns: repeat(2, 1fr);
 }
-@media (max-width: 760px) { .steps { grid-template-columns: 1fr; } }
+@media (max-width: 760px) {
+  .steps { grid-template-columns: 1fr; gap: 16px; }
+}
 
 .step {
   background: var(--bg-2);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 26px 26px 22px;
-  position: relative;
+  padding: 22px 24px 20px;
+  /* CRITICAL: grid items have min-width: auto by default, which lets the long git URL
+     inside <pre> expand the card past the column width and push the whole page wider.
+     min-width: 0 forces the card to respect its column and lets the <pre> scroll. */
+  min-width: 0;
+}
+/* Step number is now inline with the title (was absolutely positioned above the card,
+   which on mobile clipped against the next card's content). */
+.step h3 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 10px;
+  line-height: 1.25;
+  /* same min-width: 0 trick so a long title wraps instead of pushing the badge out. */
+  min-width: 0;
+  flex-wrap: wrap;
 }
 .step-num {
-  position: absolute;
-  top: -14px; left: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   width: 32px; height: 32px;
-  display: inline-flex; align-items: center; justify-content: center;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--grad-1), var(--grad-2));
-  color: #fff; font-weight: 700; font-size: 0.9rem;
+  color: #fff; font-weight: 700; font-size: 0.95rem;
   box-shadow: 0 6px 18px -4px rgba(255, 69, 58, 0.6);
 }
-.step h3 { margin-top: 8px; }
 .step p  { margin: 0; }
-.step pre { margin-top: 8px; margin-bottom: 0; font-size: 0.9rem; }
-.step a { color: var(--accent-soft); text-decoration: underline; text-underline-offset: 3px; }
+.step pre {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.step pre code { white-space: pre; }     /* keep the URL on one line; scroll it instead of wrapping mid-token */
+.step a    { color: var(--accent-soft); text-decoration: underline; text-underline-offset: 3px; word-break: break-word; }
+.step code { word-break: break-word; }   /* inline code tokens (e.g. com.yourname.vidacity) can wrap */
+
+/* Mobile tuning: smaller padding + slightly smaller badge so the title row breathes. */
+@media (max-width: 540px) {
+  .step { padding: 20px 18px 18px; }
+  .step h3 { font-size: 1.05rem; gap: 12px; }
+  .step-num { width: 28px; height: 28px; font-size: 0.85rem; }
+  .step pre { font-size: 0.78rem; padding: 12px; }
+}
 
 .callout {
   margin-top: 40px;
@@ -369,6 +431,11 @@ section { padding: 96px 0; }
   border: 1px solid rgba(255, 69, 58, 0.25);
   border-radius: var(--radius-lg);
   padding: 24px 28px;
+  min-width: 0;
+}
+@media (max-width: 540px) {
+  .callout { margin-top: 28px; padding: 20px 18px; }
+  .callout ul { padding-left: 18px; }
 }
 .callout h3 { color: var(--accent-soft); margin-bottom: 12px; }
 .callout ul { margin: 0; padding-left: 20px; color: var(--text-dim); }
@@ -496,6 +563,19 @@ section { padding: 96px 0; }
 .cta h2 { margin-bottom: 16px; }
 .cta p  { font-size: 1.1rem; margin-bottom: 28px; }
 .cta-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
+
+/* Mobile: final-CTA pair stacks into one column, two rows, centered horizontally. */
+@media (max-width: 760px) {
+  .cta-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cta-row .btn {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+}
 
 /* ---- Footer ---- */
 .site-footer {

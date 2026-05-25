@@ -525,35 +525,29 @@
 
     <ol class="steps">
       <li class="step">
-        <span class="step-num">1</span>
-        <h3>Install Xcode</h3>
+        <h3><span class="step-num">1</span>Install Xcode</h3>
         <p>Download <a href="https://apps.apple.com/app/xcode/id497799835" rel="noopener" target="_blank">Xcode 16 or 26 from the Mac App Store</a>. The first launch takes a while, because it installs the iOS SDK in the background.</p>
       </li>
       <li class="step">
-        <span class="step-num">2</span>
-        <h3>Add your Apple ID to Xcode</h3>
+        <h3><span class="step-num">2</span>Add your Apple ID to Xcode</h3>
         <p>Xcode → Settings → Accounts → <em>+</em> → Apple ID. A <strong>Personal Team</strong> appears under your account. This is the free signing identity. No paid developer enrollment needed.</p>
       </li>
       <li class="step">
-        <span class="step-num">3</span>
-        <h3>Clone Vidacity</h3>
+        <h3><span class="step-num">3</span>Clone Vidacity</h3>
 <pre><code>git clone https://github.com/leokossdev/vidacity.git
 cd vidacity
 open Vidacity/Vidacity.xcodeproj</code></pre>
       </li>
       <li class="step">
-        <span class="step-num">4</span>
-        <h3>Change the bundle identifier</h3>
+        <h3><span class="step-num">4</span>Change the bundle identifier</h3>
         <p>In Xcode, select the <strong>Vidacity</strong> target → <em>Signing &amp; Capabilities</em> → set the Bundle Identifier to something unique to you (e.g. <code>com.yourname.vidacity</code>). Set <em>Team</em> to your Personal Team.</p>
       </li>
       <li class="step">
-        <span class="step-num">5</span>
-        <h3>Plug in your iPhone or iPad</h3>
+        <h3><span class="step-num">5</span>Plug in your iPhone or iPad</h3>
         <p>Connect via USB (or pair wirelessly in Finder). On the device: Settings → Privacy &amp; Security → <strong>Developer Mode → On</strong>. The device reboots.</p>
       </li>
       <li class="step">
-        <span class="step-num">6</span>
-        <h3>Build &amp; run</h3>
+        <h3><span class="step-num">6</span>Build &amp; run</h3>
         <p>Pick your device from the Xcode destination dropdown and press <kbd>⌘R</kbd>. First time only: on the device, Settings → General → VPN &amp; Device Management → trust your developer profile.</p>
       </li>
     </ol>
