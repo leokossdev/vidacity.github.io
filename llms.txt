@@ -1,6 +1,6 @@
 # Vidacity
 
-> Vidacity is a free, open-source native SwiftUI YouTube client for iPhone and iPad. It plays YouTube videos ad-free, signs in with the user's real YouTube account via cookies (no Google API key), supports background audio, AirPlay, and Picture-in-Picture, and offers offline downloads from YouTube plus ~2,000 other sites supported by yt-dlp. Distributed via source on GitHub for sideload installation — not available on the App Store.
+> Vidacity is a free, open-source native SwiftUI YouTube client for iPhone and iPad. It plays YouTube videos ad-free, signs in with the user's real YouTube account via cookies (no Google API key), supports background audio, AirPlay, and Picture-in-Picture, and offers offline downloads from YouTube plus ~2,000 other sites supported by yt-dlp. Distributed via source on GitHub for sideload installation, not available on the App Store.
 
 ## Key facts
 
@@ -14,29 +14,29 @@
 
 ## Core libraries
 
-- **yt-dlp** — stream URL extraction for YouTube and ~2,000 other sites. Auto-updates weekly inside the app.
-- **YouTubeKit** (b5i/YouTubeKit) — cookie-based YouTube data layer. No Google API key required.
-- **FFmpeg** — in-process muxing and transcoding (H.264, MP3) compiled as a static iOS library.
-- **YoutubeDL-iOS** (kewlbear/YoutubeDL-iOS) — brings yt-dlp + Python to iOS via PythonKit.
-- **Kingfisher** — disk-cached image loader for thumbnails and avatars.
-- **LNPopupUI** — expanding mini-player above the tab bar (Apple Music / Podcasts interaction model).
-- **KeychainAccess** — secure Keychain storage for the user's YouTube session cookies.
-- **SwimplyPlayIndicator** — animated audio bars for the currently-playing item.
+- **yt-dlp:** stream URL extraction for YouTube and ~2,000 other sites. Auto-updates weekly inside the app.
+- **YouTubeKit** (b5i/YouTubeKit): cookie-based YouTube data layer. No Google API key required.
+- **FFmpeg:** in-process muxing and transcoding (H.264, MP3) compiled as a static iOS library.
+- **YoutubeDL-iOS** (kewlbear/YoutubeDL-iOS): brings yt-dlp + Python to iOS via PythonKit.
+- **Kingfisher:** disk-cached image loader for thumbnails and avatars.
+- **LNPopupUI:** expanding mini-player above the tab bar (Apple Music / Podcasts interaction model).
+- **KeychainAccess:** secure Keychain storage for the user's YouTube session cookies.
+- **SwimplyPlayIndicator:** animated audio bars for the currently-playing item.
 
 ## Features
 
 - Watch YouTube ad-free with the official mobile-app surface (home, search, channel, playlist, video detail, comments).
-- Sign in with a real YouTube account via in-app WKWebView. Cookies stored only in iOS Keychain — never on disk or in logs.
-- Subscriptions, watch history, user playlists, liked videos, Watch Later — all synced from YouTube.
+- Sign in with a real YouTube account via in-app WKWebView. Cookies stored only in iOS Keychain, never on disk or in logs.
+- Subscriptions, watch history, user playlists, liked videos, Watch Later. All synced from YouTube.
 - Like / dislike / save-to-playlist actions on videos.
 - Read, write, reply to, like, dislike, and translate comments.
 - Background audio with lock-screen controls and Now Playing.
 - AirPlay and Picture-in-Picture supported.
 - Offline downloads of any played video (implicit) and via an explicit Download button.
-- Dedicated "Link" tab — paste any URL from ~2,000 yt-dlp-supported sites (YouTube, Vimeo, X/Twitter, TikTok, Instagram, SoundCloud, Reddit, Twitch, Dailymotion, Bilibili, ...) and pick video + audio format with optional H.264 / MP3 transcoding.
+- Dedicated "Link" tab. Paste any URL from ~2,000 yt-dlp-supported sites (YouTube, Vimeo, X/Twitter, TikTok, Instagram, SoundCloud, Reddit, Twitch, Dailymotion, Bilibili, ...) and pick video + audio format with optional H.264 / MP3 transcoding.
 - Three-tier playback fallback handling PoT-locked content (Proof-of-Origin Tokens).
 - Localized in English, Spanish, Russian, German, and French.
-- Dark mode only — the whole UI is designed for it.
+- Dark mode only, because the whole UI is designed for it.
 - No telemetry, no analytics, no remote logging.
 
 ## Installation summary
@@ -59,7 +59,7 @@ Apple App Store Review Guideline 5.2.3 prohibits unofficial YouTube clients (app
 ## Privacy & security
 
 - All YouTube authentication is cookie-based via an ephemeral `.nonPersistent()` `WKWebsiteDataStore` (no shared session state).
-- Cookies are persisted only in the iOS Keychain — never written to disk, UserDefaults, plist, or logs.
+- Cookies are persisted only in the iOS Keychain, never written to disk, UserDefaults, plist, or logs.
 - Signed stream URLs are kept in-memory only with a 30-minute TTL.
 - No telemetry, analytics, or remote logging SDKs.
 - All logging uses `os.Logger` (system console), with cookies and signed URLs marked `privacy: .private`.

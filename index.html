@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#0a0a0a">
 
-<title>Vidacity — Native SwiftUI YouTube Client for iOS · Open Source</title>
+<title>Vidacity · Native SwiftUI YouTube Client for iOS · Open Source</title>
 <meta name="description" content="Vidacity is a free, open-source SwiftUI YouTube client for iPhone and iPad. Watch ad-free, download from YouTube and ~2,000 other sites via yt-dlp, play in background, sign in with your YouTube account. No Google API key, sideload via Xcode with a free Apple ID.">
 <meta name="keywords" content="vidacity, youtube client ios, open source youtube app, sideload youtube ios, yt-dlp ios, swiftui youtube, freetube ios, newpipe ios, background youtube iphone, ad free youtube ios, youtube download iphone, ipa youtube">
 <meta name="author" content="Vidacity">
@@ -14,7 +14,7 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://vidacity.app/">
-<meta property="og:title" content="Vidacity — Native SwiftUI YouTube Client for iOS · Open Source">
+<meta property="og:title" content="Vidacity · Native SwiftUI YouTube Client for iOS · Open Source">
 <meta property="og:description" content="Free, open-source YouTube client for iPhone and iPad. Watch ad-free, sign in with your account, download from ~2,000 sites via yt-dlp. Sideload via Xcode with a free Apple ID.">
 <meta property="og:image" content="https://vidacity.app/screenshots/05_player_dj_silviu_intro.jpg">
 <meta property="og:image:width" content="1290">
@@ -24,7 +24,7 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Vidacity — Open-source SwiftUI YouTube Client for iOS">
+<meta name="twitter:title" content="Vidacity · Open-source SwiftUI YouTube Client for iOS">
 <meta name="twitter:description" content="Watch YouTube ad-free, sign in, download from ~2,000 sites via yt-dlp. Sideload to iPhone or iPad with a free Apple ID.">
 <meta name="twitter:image" content="https://vidacity.app/screenshots/05_player_dj_silviu_intro.jpg">
 
@@ -96,7 +96,7 @@
       "name": "Which sites can I download from?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Link tab supports every site that yt-dlp can extract — roughly 2,000 today. That includes YouTube, Vimeo, X/Twitter, TikTok, Instagram, SoundCloud, Reddit, Twitch, Dailymotion, Bilibili, and many more. yt-dlp updates automatically every 7 days inside the app so new sites and fixes arrive without rebuilding."
+        "text": "The Link tab supports every site that yt-dlp can extract, roughly 2,000 today. That includes YouTube, Vimeo, X/Twitter, TikTok, Instagram, SoundCloud, Reddit, Twitch, Dailymotion, Bilibili, and many more. yt-dlp updates automatically every 7 days inside the app so new sites and fixes arrive without rebuilding."
       }
     },
     {
@@ -112,7 +112,7 @@
       "name": "Will my YouTube account get banned?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vidacity authenticates the same way the YouTube website does — via cookies captured from an in-app WKWebView. There is no public Google API key, no automation that simulates human input, no scraping at a rate above normal browsing. We have no evidence of bans, but YouTube can change their policy at any time. Sign in with caution and use a secondary account if you want to be safe."
+        "text": "Vidacity authenticates the same way the YouTube website does, via cookies captured from an in-app WKWebView. There is no public Google API key, no automation that simulates human input, no scraping at a rate above normal browsing. We have no evidence of bans, but YouTube can change their policy at any time. Sign in with caution and use a secondary account if you want to be safe."
       }
     },
     {
@@ -120,7 +120,7 @@
       "name": "Does Vidacity work on iPad?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Vidacity is a universal app — iPhone and iPad share the same binary. The layout adapts to wider screens and the popup player remains pinned above the tab bar on both."
+        "text": "Yes. Vidacity is a universal app. iPhone and iPad share the same binary. The layout adapts to wider screens and the popup player remains pinned above the tab bar on both."
       }
     },
     {
@@ -152,7 +152,7 @@
       "name": "What formats can I download?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Whatever yt-dlp exposes for the source video. The Preview screen lets you pick a video format (resolution and codec — typically up to 1080p or higher when YouTube serves it) and an audio format separately, with optional on-device transcoding to H.264 for Apple-friendly playback and to MP3 for audio-only saves. Conversion runs in-process via FFmpeg with no network round trip."
+        "text": "Whatever yt-dlp exposes for the source video. The Preview screen lets you pick a video format (resolution and codec, typically up to 1080p or higher when YouTube serves it) and an audio format separately, with optional on-device transcoding to H.264 for Apple-friendly playback and to MP3 for audio-only saves. Conversion runs in-process via FFmpeg with no network round trip."
       }
     },
     {
@@ -199,8 +199,37 @@
   <div class="hero-inner">
     <div class="hero-copy">
       <p class="hero-eyebrow"><span class="dot"></span>Open source · MIT-style license · iOS 17+</p>
-      <h1 id="hero-title">A native YouTube&nbsp;client<br>built for <span class="grad">iPhone</span> and <span class="grad">iPad</span>.</h1>
-      <p class="hero-sub">Watch ad-free. Sign in with your YouTube account. Download from <strong>~2,000 sites</strong> via yt-dlp. Background audio, AirPlay, Picture-in-Picture, offline playback &mdash; all native SwiftUI, no Google API key.</p>
+      <h1 id="hero-title">A native <span class="grad">YouTube</span>&nbsp;client<br>built for <span class="grad">iPhone</span> and <span class="grad">iPad</span></h1>
+      <ul class="hero-list">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M8.2 12.5l2.6 2.6 4.8-5.8"/>
+          </svg>
+          <span>Watch ad-free</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M8.2 12.5l2.6 2.6 4.8-5.8"/>
+          </svg>
+          <span>Sign in with your YouTube account</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M8.2 12.5l2.6 2.6 4.8-5.8"/>
+          </svg>
+          <span>Download from <strong>~2,000 sites</strong> via yt-dlp</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M8.2 12.5l2.6 2.6 4.8-5.8"/>
+          </svg>
+          <span>Background audio, AirPlay, Picture-in-Picture, offline playback, all native SwiftUI with no Google API key</span>
+        </li>
+      </ul>
       <div class="hero-cta">
         <a class="btn btn-primary" href="https://github.com/leokossdev/vidacity" rel="noopener" target="_blank">
           <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.34-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.34.95.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.05.78 2.12v3.14c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
@@ -262,7 +291,7 @@
 <!-- ===== Features ===== -->
 <section id="features" class="features" aria-labelledby="features-title">
   <div class="container">
-    <h2 id="features-title" class="section-title">Everything the official app does — plus what it doesn't.</h2>
+    <h2 id="features-title" class="section-title">Everything the official app does, plus what it doesn't.</h2>
     <p class="section-lead">Vidacity replicates the YouTube mobile app surface but removes the ads, the tracking, and the App-Store-only restrictions. Then it adds a universal downloader on top.</p>
     <div class="grid grid-3">
       <article class="card">
@@ -295,7 +324,7 @@
           </svg>
         </div>
         <h3>Download</h3>
-        <p>Offline copies of any video you play. Plus a dedicated <em>Link</em> tab for ~2,000 yt-dlp-supported sites — Instagram, TikTok, X, Vimeo, SoundCloud.</p>
+        <p>Offline copies of any video you play. Plus a dedicated <em>Link</em> tab for ~2,000 yt-dlp-supported sites: Instagram, TikTok, X, Vimeo, SoundCloud.</p>
       </article>
       <article class="card">
         <div class="card-icon" aria-hidden="true">
@@ -328,7 +357,7 @@
           </svg>
         </div>
         <h3>Localized</h3>
-        <p>Fully translated in English, Spanish, Russian, German, and French via Apple's String Catalog. Dark mode only — the whole app is designed for it.</p>
+        <p>Fully translated in English, Spanish, Russian, German, and French via Apple's String Catalog. Dark mode only, because the whole app is designed for it.</p>
       </article>
     </div>
   </div>
@@ -347,10 +376,6 @@
       <figure class="shot">
         <img src="screenshots/03_search_results_dance_music.jpg" loading="lazy" alt="Search results list showing dance music videos" width="1290" height="2796">
         <figcaption><strong>Results</strong> · videos, playlists, channels</figcaption>
-      </figure>
-      <figure class="shot">
-        <img src="screenshots/05_player_dj_silviu_intro.jpg" loading="lazy" alt="Full-screen player surface with metadata and up-next list" width="1290" height="2796">
-        <figcaption><strong>Player</strong> · LNPopupUI expanded surface</figcaption>
       </figure>
       <figure class="shot">
         <img src="screenshots/06_player_controls_club_mix.jpg" loading="lazy" alt="Native AVPlayer transport controls overlaid on a music video" width="1290" height="2796">
@@ -390,12 +415,12 @@
       <li class="step">
         <span class="step-num">1</span>
         <h3>Install Xcode</h3>
-        <p>Download <a href="https://apps.apple.com/app/xcode/id497799835" rel="noopener" target="_blank">Xcode 16 or 26 from the Mac App Store</a>. The first launch takes a while &mdash; it installs the iOS SDK in the background.</p>
+        <p>Download <a href="https://apps.apple.com/app/xcode/id497799835" rel="noopener" target="_blank">Xcode 16 or 26 from the Mac App Store</a>. The first launch takes a while, because it installs the iOS SDK in the background.</p>
       </li>
       <li class="step">
         <span class="step-num">2</span>
         <h3>Add your Apple ID to Xcode</h3>
-        <p>Xcode → Settings → Accounts → <em>+</em> → Apple ID. A <strong>Personal Team</strong> appears under your account &mdash; this is the free signing identity. No paid developer enrollment needed.</p>
+        <p>Xcode → Settings → Accounts → <em>+</em> → Apple ID. A <strong>Personal Team</strong> appears under your account. This is the free signing identity. No paid developer enrollment needed.</p>
       </li>
       <li class="step">
         <span class="step-num">3</span>
@@ -426,7 +451,7 @@ open Vidacity/Vidacity.xcodeproj</code></pre>
       <ul>
         <li>Apps signed with a free Apple ID expire after <strong>7 days</strong>. After that, re-run from Xcode (or use <a href="https://altstore.io" rel="noopener" target="_blank">AltStore</a> to auto-refresh).</li>
         <li>A single free Apple ID can sign at most <strong>3 different apps</strong> on a device at once.</li>
-        <li>None of the limits are something Vidacity controls — they apply to every free-signed app on iOS.</li>
+        <li>None of the limits are something Vidacity controls. They apply to every free-signed app on iOS.</li>
       </ul>
     </div>
   </div>
@@ -444,7 +469,7 @@ open Vidacity/Vidacity.xcodeproj</code></pre>
       </a>
       <a class="tech-card" href="https://github.com/b5i/YouTubeKit" rel="noopener" target="_blank">
         <h3>YouTubeKit</h3>
-        <p>Cookie-based YouTube data layer. Search, comments, playlists, subscriptions, likes — without a Google API key.</p>
+        <p>Cookie-based YouTube data layer. Search, comments, playlists, subscriptions, likes, all without a Google API key.</p>
       </a>
       <a class="tech-card" href="https://github.com/FFmpeg/FFmpeg" rel="noopener" target="_blank">
         <h3>FFmpeg</h3>
@@ -488,7 +513,7 @@ open Vidacity/Vidacity.xcodeproj</code></pre>
       </details>
       <details class="faq-item">
         <summary>Which sites can I download from?</summary>
-        <p>The <em>Link</em> tab supports every site that yt-dlp can extract — roughly 2,000 today. That includes YouTube, Vimeo, X/Twitter, TikTok, Instagram, SoundCloud, Reddit, Twitch, Dailymotion, Bilibili, and many more. yt-dlp updates automatically every 7 days inside the app so new sites and fixes arrive without rebuilding.</p>
+        <p>The <em>Link</em> tab supports every site that yt-dlp can extract, roughly 2,000 today. That includes YouTube, Vimeo, X/Twitter, TikTok, Instagram, SoundCloud, Reddit, Twitch, Dailymotion, Bilibili, and many more. yt-dlp updates automatically every 7 days inside the app so new sites and fixes arrive without rebuilding.</p>
       </details>
       <details class="faq-item">
         <summary>Do I need a paid Apple Developer account?</summary>
@@ -496,11 +521,11 @@ open Vidacity/Vidacity.xcodeproj</code></pre>
       </details>
       <details class="faq-item">
         <summary>Will my YouTube account get banned?</summary>
-        <p>Vidacity authenticates the same way the YouTube website does — via cookies captured from an in-app <code>WKWebView</code>. There is no public Google API key, no automation that simulates human input, no scraping at a rate above normal browsing. We have no evidence of bans, but YouTube can change their policy at any time. Sign in with caution and use a secondary account if you want to be safe.</p>
+        <p>Vidacity authenticates the same way the YouTube website does, via cookies captured from an in-app <code>WKWebView</code>. There is no public Google API key, no automation that simulates human input, no scraping at a rate above normal browsing. We have no evidence of bans, but YouTube can change their policy at any time. Sign in with caution and use a secondary account if you want to be safe.</p>
       </details>
       <details class="faq-item">
         <summary>Does Vidacity work on iPad?</summary>
-        <p>Yes. Vidacity is a universal app — iPhone and iPad share the same binary. The layout adapts to wider screens and the popup player remains pinned above the tab bar on both.</p>
+        <p>Yes. Vidacity is a universal app. iPhone and iPad share the same binary. The layout adapts to wider screens and the popup player remains pinned above the tab bar on both.</p>
       </details>
       <details class="faq-item">
         <summary>Does it work on Mac?</summary>
@@ -508,7 +533,7 @@ open Vidacity/Vidacity.xcodeproj</code></pre>
       </details>
       <details class="faq-item">
         <summary>Why does the app expire after 7 days?</summary>
-        <p>That's an Apple-imposed restriction on free Apple Developer accounts — not something Vidacity controls. Free-signed provisioning profiles are valid for 7 days. Tools like <a href="https://altstore.io" rel="noopener" target="_blank">AltStore</a> can auto-resign and re-install in the background to make the limit invisible. With a paid $99/year developer account the certificate is valid for a full year.</p>
+        <p>That's an Apple-imposed restriction on free Apple Developer accounts, not something Vidacity controls. Free-signed provisioning profiles are valid for 7 days. Tools like <a href="https://altstore.io" rel="noopener" target="_blank">AltStore</a> can auto-resign and re-install in the background to make the limit invisible. With a paid $99/year developer account the certificate is valid for a full year.</p>
       </details>
       <details class="faq-item">
         <summary>Can I sign in with my YouTube account?</summary>
@@ -516,7 +541,7 @@ open Vidacity/Vidacity.xcodeproj</code></pre>
       </details>
       <details class="faq-item">
         <summary>What formats can I download?</summary>
-        <p>Whatever yt-dlp exposes for the source video. The Preview screen lets you pick a video format (resolution and codec — typically up to 1080p or higher when YouTube serves it) and an audio format separately, with optional on-device transcoding to H.264 for Apple-friendly playback and to MP3 for audio-only saves. Conversion runs in-process via FFmpeg with no network round trip.</p>
+        <p>Whatever yt-dlp exposes for the source video. The Preview screen lets you pick a video format (resolution and codec, typically up to 1080p or higher when YouTube serves it) and an audio format separately, with optional on-device transcoding to H.264 for Apple-friendly playback and to MP3 for audio-only saves. Conversion runs in-process via FFmpeg with no network round trip.</p>
       </details>
       <details class="faq-item">
         <summary>Is Vidacity on the App Store?</summary>
@@ -530,7 +555,7 @@ open Vidacity/Vidacity.xcodeproj</code></pre>
 <section class="cta" aria-labelledby="cta-title">
   <div class="container container-narrow text-center">
     <h2 id="cta-title">Ready to try it?</h2>
-    <p>The whole project lives on GitHub. Star it, fork it, file issues, send PRs — it's a hobby project that lives off contributions.</p>
+    <p>The whole project lives on GitHub. Star it, fork it, file issues, send PRs. It's a hobby project that lives off contributions.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="https://github.com/leokossdev/vidacity" rel="noopener" target="_blank">View on GitHub →</a>
       <a class="btn btn-ghost" href="#install">Installation guide</a>
