@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#0a0a0a">
 
-<title>Vidacity · Native SwiftUI YouTube Client for iOS · Open Source</title>
-<meta name="description" content="Vidacity is a free, open-source SwiftUI YouTube client for iPhone and iPad. Watch ad-free, download from YouTube and ~2,000 other sites via yt-dlp, play in background, sign in with your YouTube account. No Google API key, sideload via Xcode with a free Apple ID.">
-<meta name="keywords" content="vidacity, youtube client ios, open source youtube app, sideload youtube ios, yt-dlp ios, swiftui youtube, freetube ios, newpipe ios, background youtube iphone, ad free youtube ios, youtube download iphone, ipa youtube">
+<title>Vidacity · Free YouTube Client for iPhone & iPad · Ad-Free + Downloads</title>
+<meta name="description" content="Vidacity is a free, open-source YouTube client for iPhone and iPad. Watch YouTube without ads, sign in with your account, download videos from YouTube, Instagram, TikTok, X/Twitter and 2,000+ other sites. Background audio, AirPlay, Picture-in-Picture, offline playback. Free forever, sideload with Xcode and a free Apple ID.">
+<meta name="keywords" content="free youtube client iphone, youtube no ads iphone, youtube downloader iphone, download youtube videos iphone free, ad free youtube ios, youtube background play iphone, instagram reel downloader iphone, tiktok downloader iphone no watermark, twitter video downloader iphone, vidacity, open source youtube app ios, sideload youtube ipa, yt-dlp ios, swiftui youtube, freetube ios, newpipe ios alternative">
 <meta name="author" content="Vidacity">
 <link rel="canonical" href="https://vidacity.app/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://vidacity.app/">
-<meta property="og:title" content="Vidacity · Native SwiftUI YouTube Client for iOS · Open Source">
-<meta property="og:description" content="Free, open-source YouTube client for iPhone and iPad. Watch ad-free, sign in with your account, download from ~2,000 sites via yt-dlp. Sideload via Xcode with a free Apple ID.">
+<meta property="og:title" content="Vidacity · Free YouTube Client for iPhone & iPad · Ad-Free + Downloads">
+<meta property="og:description" content="Free, open-source YouTube client for iPhone and iPad. Watch YouTube without ads, download videos from YouTube, Instagram, TikTok, X and 2,000+ sites. Background audio, AirPlay, PiP. Sideload with a free Apple ID.">
 <meta property="og:image" content="https://vidacity.app/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -26,8 +26,8 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Vidacity · Open-source SwiftUI YouTube Client for iOS">
-<meta name="twitter:description" content="Watch YouTube ad-free, sign in, download from ~2,000 sites via yt-dlp. Sideload to iPhone or iPad with a free Apple ID.">
+<meta name="twitter:title" content="Vidacity · Free YouTube Client for iPhone, Ad-Free + Downloads">
+<meta name="twitter:description" content="Free, open-source iPhone YouTube app. Watch without ads, download from YouTube, Instagram, TikTok, X and 2,000+ sites. Sideload with a free Apple ID.">
 <meta name="twitter:image" content="https://vidacity.app/og-image.jpg">
 <meta name="twitter:image:alt" content="Vidacity, a native YouTube client for iPhone and iPad. Open source.">
 
@@ -166,7 +166,115 @@
         "@type": "Answer",
         "text": "No. Vidacity is for personal use, sideload, or TestFlight distribution only. Apple's App Store guidelines (specifically rule 5.2.3) prohibit unofficial YouTube clients, so a public App Store release isn't possible. Build from source via Xcode or get a TestFlight invite from a maintainer."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best free YouTube app for iPhone without ads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vidacity is the leading free, open-source YouTube client for iPhone that plays videos without any ads. Unlike YouTube Premium (which costs $13.99/month) it has no subscription, no in-app purchases, and no tracking. Background audio, Picture-in-Picture, AirPlay, offline downloads and YouTube account sign-in all work, and it's fully native SwiftUI rather than a web wrapper."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I watch YouTube without ads on iPhone for free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Install Vidacity on your iPhone via Xcode and a free Apple ID. Because Vidacity uses YouTubeKit (a cookie-based YouTube data layer that doesn't request ads in its API calls), every video plays ad-free by default. No content blocker, VPN, or jailbreak is required, and there's no subscription cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I download YouTube videos to my iPhone for free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open Vidacity, tap the Link tab, paste the YouTube video URL, tap Fetch, then tap Download on the Preview screen. The video saves to the Downloads tab as a local MP4, playable offline with no time limit. Up to 1080p and higher is available wherever YouTube serves it. The same flow works for Instagram, TikTok, X (formerly Twitter), Vimeo, SoundCloud, Reddit, Twitch and roughly 2,000 other sites."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I download Instagram reels on iPhone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tap Share on the reel in Instagram and choose Copy link. Open Vidacity, switch to the Link tab and paste the URL. Tap Fetch then Download. The reel saves as MP4 to the Downloads tab and can be played offline. You do not need an Instagram account to watch the saved file."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I download TikTok videos without watermark on iPhone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Copy the TikTok video link from the Share menu. Paste it into the Link tab in Vidacity and tap Fetch. yt-dlp pulls the underlying source MP4, which on TikTok is usually the watermark-free original. Tap Download to save it locally."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Vidacity require jailbreak?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Vidacity does not require a jailbroken iPhone. It installs through standard Apple sideload tooling: Xcode on a Mac, or AltStore for ongoing wireless re-signing. Your iPhone stays fully stock and you keep system updates."
+      }
     }
+  ]
+}
+</script>
+
+<!-- Schema.org: HowTo for downloading a YouTube video on iPhone -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to download YouTube videos on iPhone for free",
+  "description": "Step-by-step guide to download YouTube videos to an iPhone using the free, open-source Vidacity app. No subscription, no ads, no watermark.",
+  "totalTime": "PT2M",
+  "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+  "supply": [
+    { "@type": "HowToSupply", "name": "iPhone or iPad on iOS 17 or later" },
+    { "@type": "HowToSupply", "name": "Vidacity app (sideloaded via Xcode)" }
+  ],
+  "tool": [
+    { "@type": "HowToTool", "name": "Vidacity" }
+  ],
+  "step": [
+    { "@type": "HowToStep", "name": "Copy the YouTube video URL", "text": "Open the YouTube app or Safari, tap Share on the video, then choose Copy link." },
+    { "@type": "HowToStep", "name": "Open the Link tab in Vidacity", "text": "Launch Vidacity and switch to the Link tab from the bottom bar." },
+    { "@type": "HowToStep", "name": "Paste the URL and tap Fetch", "text": "Paste the copied URL into the field and tap Fetch. Vidacity probes the video via yt-dlp." },
+    { "@type": "HowToStep", "name": "Pick a format on the Preview screen", "text": "Choose a video resolution and audio format. Optionally enable H.264 or MP3 transcoding." },
+    { "@type": "HowToStep", "name": "Tap Download", "text": "The file downloads to the Downloads tab. Tap to play it offline anytime." }
+  ]
+}
+</script>
+
+<!-- Schema.org: HowTo for downloading an Instagram reel -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to download an Instagram reel on iPhone for free",
+  "description": "Save Instagram reels as MP4 to your iPhone using the free, open-source Vidacity app. No Instagram account required to watch them offline.",
+  "totalTime": "PT2M",
+  "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+  "step": [
+    { "@type": "HowToStep", "name": "Copy the reel link", "text": "In the Instagram app, tap the Share icon on the reel and choose Copy link." },
+    { "@type": "HowToStep", "name": "Paste into Vidacity Link tab", "text": "Open Vidacity, switch to the Link tab and paste the URL." },
+    { "@type": "HowToStep", "name": "Fetch and download", "text": "Tap Fetch, then Download on the Preview screen. The reel saves as MP4 in the Downloads tab." }
+  ]
+}
+</script>
+
+<!-- Schema.org: HowTo for downloading a TikTok video without watermark -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to download a TikTok video without watermark on iPhone",
+  "description": "Save TikTok videos to your iPhone (usually watermark-free) using the free, open-source Vidacity app.",
+  "totalTime": "PT2M",
+  "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+  "step": [
+    { "@type": "HowToStep", "name": "Copy the TikTok link", "text": "Tap Share on the TikTok and choose Copy link." },
+    { "@type": "HowToStep", "name": "Paste into Vidacity Link tab", "text": "Open Vidacity, go to the Link tab and paste." },
+    { "@type": "HowToStep", "name": "Fetch and download", "text": "Tap Fetch. yt-dlp pulls the source MP4 (usually the watermark-free version). Tap Download to save." }
   ]
 }
 </script>
@@ -189,7 +297,7 @@
       <li><a href="#features">Features</a></li>
       <li><a href="#screenshots">Screenshots</a></li>
       <li><a href="#install">Install</a></li>
-      <li><a href="#tech">Tech</a></li>
+      <li><a href="#how-to-download">Downloads</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="https://github.com/leokossdev/vidacity" class="nav-cta" rel="noopener" target="_blank">GitHub →</a></li>
     </ul>
@@ -202,36 +310,36 @@
 <section class="hero" aria-labelledby="hero-title">
   <div class="hero-inner">
     <div class="hero-copy">
-      <p class="hero-eyebrow"><span class="dot"></span>Open source · MIT-style license · iOS 17+</p>
-      <h1 id="hero-title">A native <span class="grad">YouTube</span>&nbsp;client<br>built for <span class="grad">iPhone</span> and <span class="grad">iPad</span></h1>
+      <p class="hero-eyebrow"><span class="dot"></span>Free forever · Open source · iOS 17+</p>
+      <h1 id="hero-title">The free <span class="grad">YouTube</span>&nbsp;client<br>for <span class="grad">iPhone</span> and <span class="grad">iPad</span></h1>
       <ul class="hero-list">
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="9"/>
             <path d="M8.2 12.5l2.6 2.6 4.8-5.8"/>
           </svg>
-          <span>Watch ad-free</span>
+          <span><strong>Watch YouTube without ads</strong> on iPhone and iPad</span>
         </li>
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="9"/>
             <path d="M8.2 12.5l2.6 2.6 4.8-5.8"/>
           </svg>
-          <span>Sign in with your YouTube account</span>
+          <span>Sign in with your YouTube account, sync subscriptions and history</span>
         </li>
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="9"/>
             <path d="M8.2 12.5l2.6 2.6 4.8-5.8"/>
           </svg>
-          <span>Download from <strong>~2,000 sites</strong> via yt-dlp</span>
+          <span><strong>Download videos</strong> from YouTube, Instagram, TikTok, X, Vimeo and <strong>2,000+ more sites</strong></span>
         </li>
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="9"/>
             <path d="M8.2 12.5l2.6 2.6 4.8-5.8"/>
           </svg>
-          <span>Background audio, AirPlay, Picture-in-Picture, offline playback, all native SwiftUI with no Google API key</span>
+          <span>Background audio, AirPlay, Picture-in-Picture, offline playback. No Google API key, no telemetry, no paid tier</span>
         </li>
       </ul>
       <div class="hero-cta">
@@ -461,6 +569,87 @@ open Vidacity/Vidacity.xcodeproj</code></pre>
   </div>
 </section>
 
+<!-- ===== How to download (targets long-tail queries) ===== -->
+<section id="how-to-download" class="how-to" aria-labelledby="how-to-title">
+  <div class="container">
+    <h2 id="how-to-title" class="section-title">How to download YouTube, Instagram &amp; TikTok videos on iPhone for free.</h2>
+    <p class="section-lead">No subscription, no ads, no watermark. The Link tab inside Vidacity uses yt-dlp to pull videos directly from the source. Same flow for every supported site.</p>
+
+    <div class="grid grid-3">
+      <article class="how-card">
+        <h3>Download a YouTube video</h3>
+        <ol>
+          <li>Copy the video URL from the YouTube app or Safari.</li>
+          <li>Open Vidacity, switch to the <strong>Link</strong> tab.</li>
+          <li>Paste the URL and tap <strong>Fetch</strong>.</li>
+          <li>On the Preview screen, pick a video format (up to 1080p+) and tap <strong>Download</strong>.</li>
+          <li>The file lands in the <strong>Downloads</strong> tab, playable offline.</li>
+        </ol>
+      </article>
+      <article class="how-card">
+        <h3>Download an Instagram reel</h3>
+        <ol>
+          <li>In the Instagram app, tap the reel's <em>Share</em> icon and choose <em>Copy link</em>.</li>
+          <li>Open Vidacity → <strong>Link</strong> tab → paste.</li>
+          <li>Tap <strong>Fetch</strong>, then <strong>Download</strong> on the Preview screen.</li>
+          <li>Saved as MP4 in <strong>Downloads</strong>. Reels stay watchable without an Instagram account.</li>
+        </ol>
+      </article>
+      <article class="how-card">
+        <h3>Download a TikTok video (no watermark)</h3>
+        <ol>
+          <li>Tap <em>Share</em> on the TikTok and copy the link.</li>
+          <li>Open Vidacity → <strong>Link</strong> tab → paste.</li>
+          <li>Tap <strong>Fetch</strong>. yt-dlp grabs the source MP4, which on TikTok is usually the watermark-free version.</li>
+          <li>Tap <strong>Download</strong>. Plays offline from the Downloads tab.</li>
+        </ol>
+      </article>
+    </div>
+
+    <p class="how-foot">
+      The same three-step flow works for <strong>X (Twitter), Vimeo, SoundCloud, Reddit, Twitch, Dailymotion, Bilibili, Facebook</strong>, and roughly 2,000 other sites that yt-dlp supports. Vidacity auto-updates its bundled yt-dlp every 7 days so new sites and breakage fixes arrive without you rebuilding the app.
+    </p>
+  </div>
+</section>
+
+<!-- ===== Why Vidacity vs other YouTube apps ===== -->
+<section id="why" class="why" aria-labelledby="why-title">
+  <div class="container">
+    <h2 id="why-title" class="section-title">Why Vidacity over other YouTube apps for iPhone.</h2>
+    <p class="section-lead">Most "YouTube without ads" solutions on iOS fall into three buckets: paid (YouTube Premium), web wrappers, or browser-extension hacks. Vidacity is a real native app, free, and doesn't track you.</p>
+
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th scope="col">Feature</th>
+            <th scope="col" class="hi">Vidacity</th>
+            <th scope="col">YouTube official</th>
+            <th scope="col">YouTube Premium</th>
+            <th scope="col">Web wrappers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Free</th>          <td class="hi">✓</td><td>✓</td><td>$13.99/mo</td><td>✓</td></tr>
+          <tr><th scope="row">No ads</th>        <td class="hi">✓</td><td>✗</td><td>✓</td><td>partial</td></tr>
+          <tr><th scope="row">Background audio</th> <td class="hi">✓</td><td>✗</td><td>✓</td><td>✗</td></tr>
+          <tr><th scope="row">Picture-in-Picture</th> <td class="hi">✓</td><td>Premium only</td><td>✓</td><td>✗</td></tr>
+          <tr><th scope="row">AirPlay</th>       <td class="hi">✓</td><td>✓</td><td>✓</td><td>limited</td></tr>
+          <tr><th scope="row">Offline downloads</th> <td class="hi">✓</td><td>Premium only</td><td>✓</td><td>✗</td></tr>
+          <tr><th scope="row">Download from non-YouTube sites</th> <td class="hi">✓ (2,000+)</td><td>✗</td><td>✗</td><td>✗</td></tr>
+          <tr><th scope="row">Sign in with your account</th> <td class="hi">✓</td><td>✓</td><td>✓</td><td>varies</td></tr>
+          <tr><th scope="row">Open source</th>   <td class="hi">✓</td><td>✗</td><td>✗</td><td>✗</td></tr>
+          <tr><th scope="row">No telemetry / tracking</th> <td class="hi">✓</td><td>✗</td><td>✗</td><td>varies</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="why-foot">
+      Vidacity is not on the App Store (Apple's <a href="https://developer.apple.com/app-store/review/guidelines/#5.2.3" rel="noopener" target="_blank">guideline&nbsp;5.2.3</a> blocks unofficial YouTube clients), so you install it from source with Xcode. That's a one-time setup compared to the recurring cost and tracking of Premium.
+    </p>
+  </div>
+</section>
+
 <!-- ===== Tech stack ===== -->
 <section id="tech" class="tech" aria-labelledby="tech-title">
   <div class="container">
@@ -550,6 +739,30 @@ open Vidacity/Vidacity.xcodeproj</code></pre>
       <details class="faq-item">
         <summary>Is Vidacity on the App Store?</summary>
         <p>No. Vidacity is for personal use, sideload, or TestFlight distribution only. Apple's App Store guidelines (specifically rule 5.2.3) prohibit unofficial YouTube clients, so a public App Store release isn't possible. Build from source via Xcode or get a TestFlight invite from a maintainer.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What is the best free YouTube app for iPhone without ads?</summary>
+        <p>Vidacity is the leading free, open-source YouTube client for iPhone that plays videos without any ads. Unlike YouTube Premium (which costs $13.99/month) it has no subscription, no in-app purchases, and no tracking. Background audio, Picture-in-Picture, AirPlay, offline downloads and YouTube account sign-in all work, and it's fully native SwiftUI rather than a web wrapper.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How do I watch YouTube without ads on iPhone for free?</summary>
+        <p>Install Vidacity on your iPhone via Xcode and a free Apple ID. Because Vidacity uses YouTubeKit (a cookie-based YouTube data layer that doesn't request ads in its API calls), every video plays ad-free by default. No content blocker, VPN, or jailbreak is required, and there's no subscription cost.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How do I download YouTube videos to my iPhone for free?</summary>
+        <p>Open Vidacity, tap the <strong>Link</strong> tab, paste the YouTube video URL, tap <strong>Fetch</strong>, then tap <strong>Download</strong> on the Preview screen. The video saves to the Downloads tab as a local MP4, playable offline with no time limit. Up to 1080p and higher is available wherever YouTube serves it. The same flow works for Instagram, TikTok, X (formerly Twitter), Vimeo, SoundCloud, Reddit, Twitch and roughly 2,000 other sites.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How do I download Instagram reels on iPhone?</summary>
+        <p>Tap <em>Share</em> on the reel in Instagram and choose <em>Copy link</em>. Open Vidacity, switch to the <strong>Link</strong> tab and paste the URL. Tap <strong>Fetch</strong> then <strong>Download</strong>. The reel saves as MP4 to the Downloads tab and can be played offline. You do not need an Instagram account to watch the saved file.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How do I download TikTok videos without watermark on iPhone?</summary>
+        <p>Copy the TikTok video link from the Share menu. Paste it into the <strong>Link</strong> tab in Vidacity and tap <strong>Fetch</strong>. yt-dlp pulls the underlying source MP4, which on TikTok is usually the watermark-free original. Tap <strong>Download</strong> to save it locally.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Does Vidacity require jailbreak?</summary>
+        <p>No. Vidacity does not require a jailbroken iPhone. It installs through standard Apple sideload tooling: Xcode on a Mac, or <a href="https://altstore.io" rel="noopener" target="_blank">AltStore</a> for ongoing wireless re-signing. Your iPhone stays fully stock and you keep system updates.</p>
       </details>
     </div>
   </div>

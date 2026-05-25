@@ -254,6 +254,8 @@ section { padding: 96px 0; }
 .features      { background: var(--bg-1); }
 .screenshots   { background: var(--bg); }
 .install       { background: var(--bg-1); }
+.how-to        { background: var(--bg); }
+.why           { background: var(--bg-1); }
 .tech          { background: var(--bg); }
 .faq           { background: var(--bg-1); }
 .cta           { background: linear-gradient(180deg, var(--bg-1), var(--bg)); }
@@ -372,6 +374,62 @@ section { padding: 96px 0; }
 .callout ul { margin: 0; padding-left: 20px; color: var(--text-dim); }
 .callout li { margin-bottom: 6px; }
 .callout a { color: var(--accent-soft); text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---- How-to cards ---- */
+.how-card {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 26px 26px 22px;
+}
+.how-card h3 { margin-bottom: 12px; }
+.how-card ol { margin: 0; padding-left: 20px; color: var(--text-dim); }
+.how-card ol li { margin-bottom: 6px; line-height: 1.5; }
+.how-card ol li::marker { color: var(--accent-soft); font-weight: 700; }
+.how-card strong { color: var(--text); }
+.how-foot { margin-top: 36px; text-align: center; color: var(--text-dim); font-size: 0.95rem; max-width: 880px; margin-left: auto; margin-right: auto; }
+
+/* ---- Comparison table ---- */
+.compare-wrap { overflow-x: auto; margin: 0 auto; max-width: 100%; }
+.compare {
+  width: 100%; min-width: 640px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  font-size: 0.95rem;
+}
+.compare th, .compare td {
+  padding: 14px 18px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-soft);
+}
+.compare thead th {
+  background: var(--bg-3);
+  font-weight: 600;
+  font-size: 0.92rem;
+  letter-spacing: 0.01em;
+  color: var(--text);
+}
+.compare tbody th {
+  text-align: left;
+  font-weight: 500;
+  color: var(--text);
+  background: transparent;
+}
+.compare tbody tr:last-child th,
+.compare tbody tr:last-child td { border-bottom: 0; }
+.compare th.hi, .compare td.hi {
+  background: rgba(255, 69, 58, 0.08);
+  color: var(--accent-soft);
+  font-weight: 600;
+}
+.compare thead th.hi { background: rgba(255, 69, 58, 0.18); color: #fff; }
+.compare td { color: var(--text-dim); }
+.why-foot { margin-top: 28px; text-align: center; color: var(--text-faint); font-size: 0.92rem; }
+.why-foot a { color: var(--accent-soft); text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---- Tech grid ---- */
 .tech-grid {
