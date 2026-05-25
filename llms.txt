@@ -73,4 +73,5 @@ MIT-style. Hobby project provided for personal and educational use only. Not aff
 - GitHub repository: https://github.com/leokossdev/vidacity
 - Issues / bug reports: https://github.com/leokossdev/vidacity/issues
 - License: https://github.com/leokossdev/vidacity/blob/main/LICENSE
+- Contact email: leokossdev@gmail.com
 - AltStore (for sideload auto-refresh): https://altstore.io
