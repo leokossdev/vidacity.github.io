@@ -547,21 +547,26 @@ section { padding: 96px 0; }
 .tech-card h3 { margin: 0; font-size: 1.05rem; }
 .tech-card p  { margin: 0; font-size: 0.92rem; }
 
-/* GitHub star badge — golden star + count, GitHub-style. */
+/* GitHub star badge — golden star + count, GitHub-style.
+   Explicit width/height attrs on the SVG (in markup) prevent browser fallback to the
+   24×24 intrinsic viewBox size when CSS resolves late, which was making the star
+   appear inflated on desktop while looking fine on mobile. */
 .stars {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  font-size: 0.82rem;
+  gap: 3px;
+  font-size: 0.78rem;
   font-weight: 600;
   color: #ffcd3c;
   flex-shrink: 0;
   white-space: nowrap;
+  line-height: 1;
 }
 .stars svg {
-  width: 13px;
-  height: 13px;
+  width: 12px;
+  height: 12px;
   flex-shrink: 0;
+  display: block;
 }
 
 .tech-foot { margin-top: 32px; text-align: center; font-size: 0.9rem; color: var(--text-faint); }
