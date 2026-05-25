@@ -7,6 +7,10 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
+      <image:loc>https://vidacity.app/og-image.jpg</image:loc>
+      <image:title>Vidacity, a native YouTube client for iPhone and iPad</image:title>
+    </image:image>
+    <image:image>
       <image:loc>https://vidacity.app/screenshots/05_player_dj_silviu_intro.jpg</image:loc>
       <image:title>Vidacity full-screen video player</image:title>
     </image:image>
