@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://vidacity.app/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://vidacity.app/screenshots/05_player_dj_silviu_intro.jpg</image:loc>
+      <image:title>Vidacity full-screen video player</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vidacity.app/screenshots/07_library_account_andrew_breus.jpg</image:loc>
+      <image:title>Vidacity Library tab with YouTube account signed in</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vidacity.app/screenshots/11_link_preview_instagram_reel.jpg</image:loc>
+      <image:title>Vidacity universal downloader preview screen</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://vidacity.app/#features</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vidacity.app/#screenshots</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vidacity.app/#install</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://vidacity.app/#tech</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vidacity.app/#faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>
